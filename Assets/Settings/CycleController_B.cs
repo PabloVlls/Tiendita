@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class CycleController_B : MonoBehaviour
 {
+    public static CycleController_B singletonCC;
+
     public int dayIndicator;
 
     public int secondsCount;
@@ -13,9 +15,19 @@ public class CycleController_B : MonoBehaviour
     public int modDnN;
 
     public bool timeTicking = true;
-
-
     // Start is called before the first frame update
+    void Awake()
+    {
+        if(singletonCC != null)
+        {
+            DestroyImmediate(this);
+        }
+        else
+        {
+            singletonCC = this;
+        }
+    }
+
     void Start()
     {
         dayIndicator = 0;
