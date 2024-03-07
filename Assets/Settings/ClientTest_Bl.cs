@@ -23,7 +23,18 @@ public class ClientTest_Bl : MonoBehaviour
        {
         Debug.Log("Primer Cliente LLega");
         CycleController_B.singletonCC.timeTicking = false;
+        Debug.Log("Hola soy el cliente");
+        StartCoroutine(ClientWaitTest());
        }
 
     }
+
+    IEnumerator ClientWaitTest()
+    {
+        yield return new WaitForSeconds(4f);
+        Debug.Log("Chao soy el cliente");
+        CycleController_B.singletonCC.timeTicking = true;
+
+    }
+
 }
