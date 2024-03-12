@@ -20,7 +20,7 @@ public class SupplierManager_BL : MonoBehaviour
     public void SupplierArrives()
     {
         modSupplierA = CycleController_B.singletonCC.dayIndicator % 3;
-        if(modSupplierA == 0)
+        if(CycleController_B.singletonCC.dayIndicator == 3 || CycleController_B.singletonCC.dayIndicator == 6 || CycleController_B.singletonCC.dayIndicator == 9)
         {
         CycleController_B.singletonCC.timeTicking = false;
         }
