@@ -138,6 +138,27 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: IMG_1391 (1)_0
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 0
+        width: 818
+        height: 1006
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ad294eaa72d810449ce15d8d9277301
+      internalID: -1187474380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -149,6 +170,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
+      IMG_1391 (1)_0: -1187474380
       IMG_1391 (1)_7: -672486540
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
