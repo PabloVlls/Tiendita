@@ -9,6 +9,17 @@ public class Storage : MonoBehaviour
     //Inventario Posible
     public int whiteBox = 1;
 
+    void Awake()
+    {
+        if(singletonS != null)
+        {
+            DestroyImmediate(this);
+        }
+        else
+        {
+            singletonS = this;
+        }
+    }
     // Start is called before the first frame update
     void Start()
     {

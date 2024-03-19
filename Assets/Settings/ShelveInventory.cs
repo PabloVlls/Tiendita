@@ -8,6 +8,18 @@ public class ShelveInventory : MonoBehaviour
 
     //Inventario Posible
     public int whiteBox = 0;
+
+    void Awake()
+    {
+        if(singletonSI != null)
+        {
+            DestroyImmediate(this);
+        }
+        else
+        {
+            singletonSI = this;
+        }
+    }
     // Start is called before the first frame update
     void Start()
     {

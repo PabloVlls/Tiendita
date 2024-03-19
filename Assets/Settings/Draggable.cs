@@ -52,6 +52,7 @@ public class Draggable : MonoBehaviour, IPointerDownHandler, IDragHandler, IEndD
                 snapped = true;
                 Storage.singletonS.whiteBox = Storage.singletonS.whiteBox - 1;
                 ShelveInventory.singletonSI.whiteBox =  ShelveInventory.singletonSI.whiteBox + 1;
+                Debug.Log( "Shelve: " + ShelveInventory.singletonSI.whiteBox + " and Storage: " + Storage.singletonS.whiteBox );
             }
 
         }
